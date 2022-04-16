@@ -14,6 +14,7 @@ type
 
   TForm1 = class(TForm)
     ex: TImage;
+    Image1: TImage;
     start: TImage;
     tangram: TImage;
     fon1: TImage;
