@@ -11,7 +11,6 @@ object Form3: TForm3
   Color = 12741483
   DesignTimePPI = 120
   OnActivate = FormActivate
-  OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '2.2.0.4'
   object fonend: TImage
@@ -19,7 +18,6 @@ object Form3: TForm3
     Height = 375
     Top = 272
     Width = 853
-    OnClick = fonendClick
     Picture.Data = {
       0A544A706567496D6167653E020C00FFD8FFE107874578696600004D4D002A00
       0000080007011200030000000100010000011A00050000000100000062011B00
@@ -24671,7 +24669,6 @@ object Form3: TForm3
     OnClick = nextlvlClick
     OnMouseLeave = nextlvlMouseLeave
     OnMouseMove = nextlvlMouseMove
-    OnMouseUp = nextlvlMouseUp
     Picture.Data = {
       1754506F727461626C654E6574776F726B477261706869632508000089504E47
       0D0A1A0A0000000D494844520000006400000064080600000070E29554000007

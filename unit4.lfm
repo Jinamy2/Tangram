@@ -11,9 +11,6 @@ object Form4: TForm4
   Color = 7603398
   DesignTimePPI = 120
   OnActivate = FormActivate
-  OnClick = FormClick
-  OnCreate = FormCreate
-  OnShow = FormShow
   Position = poScreenCenter
   LCLVersion = '2.2.0.4'
   object fonend: TImage
@@ -24683,7 +24680,7 @@ object Form4: TForm4
     TabOrder = 0
   end
   object smile2: TImage
-    Left = 40
+    Left = 37
     Height = 190
     Top = 160
     Width = 210
@@ -29067,7 +29064,6 @@ object Form4: TForm4
     Height = 124
     Top = 537
     Width = 224
-    OnClick = hd113Click
     ParentShowHint = False
     Picture.Data = {
       1754506F727461626C654E6574776F726B47726170686963221B000089504E47

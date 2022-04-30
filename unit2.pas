@@ -54,14 +54,11 @@ type
     v_gl_menu: TImage;
     smile1: TImage;
     sound2: TToggleBox;
-    procedure Button11Click(Sender: TObject);
-    procedure Button13Click(Sender: TObject);
+
     procedure Button1Click(Sender: TObject);
     procedure Button9Click(Sender: TObject);
     procedure ClickBut(Sender: TObject);
-    procedure es111Click(Sender: TObject);
-    procedure es113Click(Sender: TObject);
-    procedure es116Click(Sender: TObject);
+
     procedure es1MouseLeave(Sender: TObject);
     procedure es1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure es2Click(Sender: TObject);
@@ -85,13 +82,12 @@ type
     procedure es7MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure esf1Click(Sender: TObject);
     procedure esf2Click(Sender: TObject);
-    procedure esf3Click(Sender: TObject);
-    procedure esf3DblClick(Sender: TObject);
+
     procedure esf4Click(Sender: TObject);
     procedure esf5Click(Sender: TObject);
     procedure esf6Click(Sender: TObject);
     procedure esf7Click(Sender: TObject);
-    procedure ex2Click(Sender: TObject);
+
     procedure FormActivate(Sender: TObject);
     procedure glmenuClick(Sender: TObject);
     procedure glmenuMouseLeave(Sender: TObject);
@@ -103,11 +99,11 @@ type
     procedure nextlvlMouseLeave(Sender: TObject);
     procedure nextlvlMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
-    procedure Shape1ChangeBounds(Sender: TObject);
+
     procedure sound2Change(Sender: TObject);
     procedure v_gl_menuClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
-    procedure Image1Click(Sender: TObject);
+
   private
 
   public
@@ -161,22 +157,6 @@ begin
   if sound2.Checked = false then sndPlaySound('ez.wav', snd_Async or snd_NoDefault or snd_Loop) else sndPlaySound ('silent.wav', snd_Async or snd_NoDefault or snd_Loop);
 end;
 
-
-procedure TForm2.ex2Click(Sender: TObject);
-begin
-  Close;
-end;
-
-procedure TForm2.Button11Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm2.Button13Click(Sender: TObject);
-begin
-
-end;
-
 procedure TForm2.Button1Click(Sender: TObject);
 begin
   if es1.Proportional=true then es111.Visible:= true;
@@ -191,20 +171,6 @@ end;
 procedure TForm2.ClickBut(Sender: TObject);
 begin
    (Sender as TImage).center:=true;
-end;
-
-procedure TForm2.es111Click(Sender: TObject);
-begin
-end;
-
-procedure TForm2.es113Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm2.es116Click(Sender: TObject);
-begin
-
 end;
 
 procedure TForm2.es1MouseLeave(Sender: TObject);
@@ -341,16 +307,6 @@ begin
     es115.Visible:=false; es116.Visible:=false;  es117.Visible:=false;   es2.Visible:=false;
     fonend.Visible:=true;  nextlvl.Visible:=true; glmenu.Visible:=true; es6.Visible:=false; es1.Visible:=false;
   es3.Visible:=false; es4.Visible:=false; es5.Visible:=false; sndPlaySound('win.wav', snd_Async);end;
-end;
-
-procedure TForm2.esf3Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm2.esf3DblClick(Sender: TObject);
-begin
-
 end;
 
 procedure TForm2.esf4Click(Sender: TObject);
@@ -515,22 +471,10 @@ begin
   nextlvl.Picture.LoadFromFile('далее2.png');
 end;
 
-procedure TForm2.Shape1ChangeBounds(Sender: TObject);
-begin
-
-end;
-
-
-
 procedure TForm2.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   Form1.Show;
   Form2.visible:=false;
-end;
-
-procedure TForm2.Image1Click(Sender: TObject);
-begin
-
 end;
 
 end.

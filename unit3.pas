@@ -43,14 +43,13 @@ type
     v_gl_menu2: TImage;
     procedure ex3Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure fonendClick(Sender: TObject);
+
     procedure glmenuClick(Sender: TObject);
     procedure glmenuMouseLeave(Sender: TObject);
     procedure glmenuMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
       );
     procedure nextlvlClick(Sender: TObject);
-    procedure Image4Click(Sender: TObject);
+
     procedure med1Click(Sender: TObject);
     procedure med1MouseLeave(Sender: TObject);
     procedure med1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
@@ -80,10 +79,7 @@ type
     procedure medf6Click(Sender: TObject);
     procedure medf7Click(Sender: TObject);
     procedure nextlvlMouseLeave(Sender: TObject);
-    procedure nextlvlMouseMove(Sender: TObject; Shift: TShiftState; X,
-      Y: Integer);
-    procedure nextlvlMouseUp(Sender: TObject; Button: TMouseButton;
-      Shift: TShiftState; X, Y: Integer);
+    procedure nextlvlMouseMove(Sender: TObject; Shift: TShiftState; X,Y: Integer);
     procedure sound3Change(Sender: TObject);
     procedure v_gl_menu2Click(Sender: TObject);
   private
@@ -155,16 +151,6 @@ end;
 procedure TForm3.FormActivate(Sender: TObject);
 begin
    sndPlaySound('md.wav', snd_Async or snd_NoDefault or snd_Loop);
-end;
-
-procedure TForm3.FormCreate(Sender: TObject);
-begin
-
-end;
-
-procedure TForm3.fonendClick(Sender: TObject);
-begin
-
 end;
 
 procedure TForm3.glmenuClick(Sender: TObject);
@@ -256,10 +242,6 @@ begin
    med7.Visible:=true;
 end;
 
-procedure TForm3.Image4Click(Sender: TObject);
-begin
-
-end;
 
 procedure TForm3.med1Click(Sender: TObject);
 begin
@@ -463,14 +445,6 @@ procedure TForm3.nextlvlMouseMove(Sender: TObject; Shift: TShiftState; X,
 begin
   nextlvl.Picture.LoadFromFile('далее2.png');
 end;
-
-procedure TForm3.nextlvlMouseUp(Sender: TObject; Button: TMouseButton;
-  Shift: TShiftState; X, Y: Integer);
-begin
-
-end;
-
-
 
 end.
 

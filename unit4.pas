@@ -42,14 +42,9 @@ type
     v_gl_menu3: TImage;
     procedure ex4Click(Sender: TObject);
     procedure FormActivate(Sender: TObject);
-    procedure FormClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure FormShow(Sender: TObject);
     procedure glmenuClick(Sender: TObject);
     procedure glmenuMouseLeave(Sender: TObject);
-    procedure glmenuMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
-      );
-    procedure hd113Click(Sender: TObject);
+    procedure glmenuMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure hd1Click(Sender: TObject);
     procedure hd1MouseLeave(Sender: TObject);
     procedure hd1MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
@@ -145,20 +140,6 @@ begin
   sndPlaySound('hd.wav', snd_Async or snd_NoDefault or snd_Loop);
 end;
 
-procedure TForm4.FormClick(Sender: TObject);
-begin
-end;
-
-procedure TForm4.FormCreate(Sender: TObject);
-begin
-
-end;
-
-procedure TForm4.FormShow(Sender: TObject);
-begin
-
-end;
-
 procedure TForm4.glmenuClick(Sender: TObject);
 begin
   sndPlaySound('kl.wav', snd_Async or snd_NoDefault);
@@ -205,11 +186,6 @@ begin
   glmenu.Picture.LoadFromFile('далее1.png');
 end;
 
-procedure TForm4.hd113Click(Sender: TObject);
-begin
-
-end;
-
 procedure TForm4.hd1Click(Sender: TObject);
 begin
   hd1.Center:=true;
@@ -236,8 +212,7 @@ begin
   hd2.Picture.LoadFromFile('hd2.png');
 end;
 
-procedure TForm4.hd2MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer
-  );
+procedure TForm4.hd2MouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 begin
   hd2.Picture.LoadFromFile('hdc2.png');
 end;
@@ -398,9 +373,6 @@ begin
     fonend.Visible:=true;   glmenu.Visible:=true; hd6.Visible:=false; hd1.Visible:=false;
   hd3.Visible:=false; hd4.Visible:=false; hd5.Visible:=false; sndPlaySound('win.wav', snd_Async);end;
 end;
-
-
-
 
 end.
 
